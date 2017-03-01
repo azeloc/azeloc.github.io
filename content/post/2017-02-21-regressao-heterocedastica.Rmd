@@ -1,5 +1,5 @@
 ---
-title: "Modelando a variância da normal"
+title: oi
 date: "2017-02-21T13:07:31+02:00"
 ---
 
@@ -133,6 +133,7 @@ A figura abaixo descreve os intervalos de credibilidade obtidos para cada parâm
 ```{r, eval = FALSE}
 plot(fit_stan)
 ```
+
 ```{r, echo = FALSE}
 library(magick)
 x <- image_read('img/imagem_fernando_1.jpg')
