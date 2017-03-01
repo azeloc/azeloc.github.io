@@ -8,5 +8,5 @@ for(rmd in rmds){
 
 file.remove(rmds)
 
-blogdown::install_hugo(version = "0.19")
+blogdown::install_hugo(version = "0.18")
 blogdown::build_site()
