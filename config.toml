@@ -1,31 +1,31 @@
-baseurl = "https://username.github.io"
-languageCode = "en-us"
-title = "Beautiful Hugo"
+baseurl = "https://azeloc.github.io"
+languageCode = "pt-br"
+title = "blog do @azeloc"
 theme = "beautifulhugo"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-#disqusShortname = "XXX"
+disqusShortname = "azeloc"
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "Build a beautiful and simple website in minutes"
+  subtitle = "um blog que é meio a minha cara"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   commit = false
 
 [Author]
-  name = "Some Person"
-  email = "youremail@domain.com"
-  facebook = "username"
-  github = "username"
-  twitter = "username"
-  linkedin = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  soundcloud = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
+  name = "Fernando Corrêa"
+  email = "fcorrea@abjur.org.br"
+  facebook = "fernando.filho.58"
+  github = "azeloc"
+  twitter = "azeloc"
+  #linkedin = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #soundcloud = "username"
+  #instagram = "username"
+  #youtube = "user/username" # or channel/channelname
   spotify = "username"
-  itchio = "username"
+  #itchio = "username"
 
 [[menu.main]]
     name = "Blog"
@@ -34,7 +34,7 @@ pygmentCodeFences = true
 
 [[menu.main]]
     name = "About"
-    url = "/page/about/"
+    url = "about"
     weight = 3
 
 [[menu.main]]
