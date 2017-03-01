@@ -33,21 +33,6 @@ disqusShortname = "azeloc"
     weight = 1
 
 [[menu.main]]
-    name = "About"
+    name = "Sobre"
     url = "about"
     weight = 3
-
-[[menu.main]]
-    identifier = "samples"
-    name = "Samples"
-    weight = 2
-
-[[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "/post/2016-03-08-code-sample"
-
-[[menu.main]]
-    parent = "samples"
-    name = "Test Markdown"
-    url = "/post/2015-02-20-test-markdown"
