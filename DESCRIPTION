@@ -1,0 +1,37 @@
+Package: azeloc.github.io
+Title: Blog Do Azeloc
+Version: 0.0.0.9000
+Authors@R: person("Fernando", "Corrêa", email = "fcorrea@abjur.org.br", role = c("aut", "cre"))
+Description: Meu blog.
+Depends: R (>= 3.3.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Remotes:
+    rstudio/blogdown,
+    abjur/abjData
+Imports:
+    stringr,
+    purrr,
+    httr,
+    magrittr,
+    bookdown,
+    devtools,
+    blogdown,
+    tutorial,
+    desc,
+    forcats,
+    magick,
+    ggfortify,
+    broom,
+    ggplot2,
+    dplyr,
+    ggalt,
+    survival,
+    abjData,
+    leaflet,
+    tibble,
+    tidyr,
+    gamlss,
+    dglm
+RoxygenNote: 5.0.1
