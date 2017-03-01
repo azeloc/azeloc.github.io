@@ -1,7 +1,3 @@
----
-title: Regressão heterocedastica em R
----
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '', error = FALSE, eval = FALSE)
 
