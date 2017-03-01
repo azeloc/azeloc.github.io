@@ -9,7 +9,7 @@ disqusShortname = "azeloc"
 
 [Params]
   subtitle = "um blog que é meio a minha cara"
-  logo = "img/avatar-icon.png"
+  logo = "img/avatar-icon.jpg"
   favicon = "img/favicon.ico"
   commit = false
 
