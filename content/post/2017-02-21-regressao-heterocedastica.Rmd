@@ -1,5 +1,5 @@
 ---
-title: oi
+title: Regressão heterocedastica em R
 date: "2017-02-21T13:07:31+02:00"
 ---
 
@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '', error = FALSE,
 library(magrittr)
 ```
 
-Verificar as suposições dos modelos é muito importante quando fazemos inferência estatística. Em particular, a suposição de homocedasticidade dos modelos de regressão linear é especialmente importante, pois modifica o cálculo de erros padrão, intervalos de confiança e valores-p.
+Verificar as suposições dos modelos é muito importante quando fazemos inferência estatística. A suposição de homocedasticidade dos modelos de regressão linear é especialmente importante, pois modifica o cálculo de erros padrão, intervalos de confiança e valores-p.
 
 Neste post, vou mostrar três pacotes do R que ajustam modelos da forma
 
