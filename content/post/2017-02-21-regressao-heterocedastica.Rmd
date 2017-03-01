@@ -1,5 +1,10 @@
+---
+title: 'Regressão heterocedástica em R'
+date: '2017-03-01'
+---
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '', error = FALSE, eval = FALSE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '', error = FALSE)
 
 library(magrittr)
 ```
@@ -19,7 +24,7 @@ Além de mostrar como se faz, também vou ilustrar o desempenho dos pacotes em u
 $$ Y_i = \beta x_i + \epsilon_i, \ i = 1,...n $$
 $$ \epsilon_i \sim N(0, \sigma_i)\text{ independentes, com }\sigma_i = \alpha\sqrt{|x_i|},$$
 
-e os parâmetros do modelo serão os valores $\beta = 1$ e $\alpha = 4$. Nesse modelo, a heterocedasticidade do modelo faz com que os pontos desenhem um cone ao redor da reta de regressão.
+e os parâmetros do modelo serão os valores \(\beta = 1\) e \(\alpha = 4\). Nesse modelo, a heterocedasticidade do modelo faz com que os pontos desenhem um cone ao redor da reta de regressão.
 
 ```{r}
 

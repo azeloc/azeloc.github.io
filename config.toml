@@ -4,7 +4,7 @@ title = "blog do @azeloc"
 theme = "beautifulhugo"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-disqusShortname = "azeloc"
+disqusShortname = "azeloc-github-io"
 #googleAnalytics = "XXX"
 
 [Params]

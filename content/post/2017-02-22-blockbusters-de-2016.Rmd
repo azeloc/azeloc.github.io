@@ -1,3 +1,8 @@
+---
+title: 'Blockbusters de 2016'
+date: '2017-02-26'
+---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, eval = F)
 ```

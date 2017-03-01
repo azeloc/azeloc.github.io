@@ -3,7 +3,7 @@ rmds <- list.files("content/post", pattern = "\\.Rmd$", full.names = T)
 for(rmd in rmds){
   rmarkdown::render(rmd, output_format = rmarkdown::md_document(
     variant = 'markdown', preserve_yaml = F
-  ))
+  ), clean = F)
 
   md <- gsub("\\.Rmd","\\.md",rmd) %>%
     readLines()
@@ -22,4 +22,4 @@ for(rmd in rmds){
 file.remove(rmds)
 
 blogdown::install_hugo(version = "0.18")
-blogdown::build_site()
+blogdown:::hugo_build()
