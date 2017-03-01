@@ -6,7 +6,7 @@ for(rmd in rmds){
   ))
 
   md <- gsub("\\.Rmd","\\.md",rmd) %>%
-    readr::read_lines()
+    readLines()
 
   titulos <- md %>%
     stringr::str_detect("title\\:") %>%
@@ -16,7 +16,7 @@ for(rmd in rmds){
   md[titulos] <- gsub("title\\: ","title\\: '",md[titulos]) %>%
     paste0("'")
 
-  readr::write_lines(md, gsub("\\.Rmd","\\.md",rmd))
+  writeLines(md, gsub("\\.Rmd","\\.md",rmd))
 }
 
 file.remove(rmds)
