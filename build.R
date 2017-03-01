@@ -2,7 +2,7 @@ rmds <- list.files("content/post", pattern = "\\.Rmd$", full.names = T)
 
 for(rmd in rmds){
   rmarkdown::render(rmd, output_format = rmarkdown::md_document(
-    variant = 'markdown'
+    variant = 'markdown_github', preserve_yaml = F
   ))
 }
 
