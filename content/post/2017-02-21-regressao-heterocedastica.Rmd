@@ -1,6 +1,5 @@
 ---
 title: Regressão heterocedastica em R
-date: "2017-02-21T13:07:31+02:00"
 ---
 
 ```{r setup, include=FALSE}
