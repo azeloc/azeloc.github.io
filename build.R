@@ -16,10 +16,20 @@ for(rmd in rmds){
   md[titulos] <- gsub("title\\: ","title\\: '",md[titulos]) %>%
     paste0("'")
 
-  writeLines(md, gsub("\\.Rmd","\\.md",rmd))
+  bookdown:::writeUTF8(md, gsub("\\.Rmd","\\.md",rmd))
 }
 
-file.remove(rmds)
+rejects <- list.files("content/post", pattern = 'knit|utf8', full.names = T)
+file.remove(c(rmds, rejects))
 
 blogdown::install_hugo(version = "0.18")
 blogdown:::hugo_build()
+
+files2copy <- list.files('content/post', pattern = 'files', full.names = T)
+
+dir_folder <- gsub("content/","public/", files2copy) %>%
+  gsub("_files(/)?","/",.)
+
+file.copy(files2copy, dir_folder, recursive = T)
+
+
