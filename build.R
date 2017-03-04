@@ -5,16 +5,19 @@ for(rmd in rmds){
     variant = 'markdown', preserve_yaml = F
   ), clean = F)
 
+  rmd_lines <- rmd %>%
+    readLines()
+
   md <- gsub("\\.Rmd","\\.md",rmd) %>%
     readLines()
 
-  titulos <- md %>%
-    stringr::str_detect("title\\:") %>%
-    which %>%
-    dplyr::first()
+  yaml_pos <- rmd_lines %>%
+    stringr::str_detect("---") %>%
+    which
 
-  md[titulos] <- gsub("title\\: ","title\\: '",md[titulos]) %>%
-    paste0("'")
+  yaml <- rmd_lines[yaml_pos[1]:yaml_pos[2]]
+
+  md[yaml_pos[1]:yaml_pos[2]] <- yaml
 
   bookdown:::writeUTF8(md, gsub("\\.Rmd","\\.md",rmd))
 }
